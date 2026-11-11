@@ -1,121 +1,121 @@
 <!doctype html>
-<html lang="es">
+<html lang="eu">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laborategia 1 eta 2</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GrAL Gida</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header class="container">
-        <h1>Music Store</h1>
-        <div class="row">
-            <div class="col-12 col-md-5 order-1 order-md-2">
-                <img src="https://placehold.co/600x400" alt="Portada" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-7 order-2 order-md-1">
-                <h2>The Dark Side of the Moon</h2>
-                <p>Pink Floyd</p>
-                <p>25,99 €</p>
-                <button class="btn btn-primary">Gehitu saskira</button>
-            </div>
+  <header class="bg-dark text-white py-4">
+    <div class="container">
+      <h1>GrAL Gida</h1>
+      <p class="mb-0">
+        Gradu Amaierako Lanari buruzko informazioa.
+      </p>
+    </div>
+  </header>
+
+  <nav class="bg-white border-bottom" aria-label="Nabigazio nagusia">
+    <div class="container d-flex flex-wrap gap-2 py-3">
+      <a class="btn btn-outline-primary" href="#araudia">Araudia</a>
+      <a class="btn btn-outline-primary" href="#egutegia">Egutegia</a>
+      <a class="btn btn-outline-primary" href="#memoriak">Memoriak</a>
+      <a class="btn btn-outline-primary" href="#galdetegia">Galdetegia</a>
+      <a class="btn btn-outline-secondary" href="#about">Guri buruz</a>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+
+    <h2 class="h4 mb-3">Zer kontsultatu nahi duzu?</h2>
+
+    <div class="row g-3">
+
+      <section id="araudia" class="col-12 col-md-6">
+        <div class="atal-txartela h-100">
+          <h3 class="h5">Araudia</h3>
+          <p>
+            GrALa egiteko baldintzak eta araudi ofiziala
+            kontsultatzeko atala.
+          </p>
+          <p class="garapen-oharra">
+            Araudi ofizialen estekak gehitzeko daude.
+          </p>
         </div>
-    </header>
+      </section>
 
-    <hr>
-
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <span class="navbar-brand">Metrics Dashboard</span>
+      <section id="egutegia" class="col-12 col-md-6">
+        <div class="atal-txartela h-100">
+          <h3 class="h5">Deialdiak eta egutegia</h3>
+          <p>
+            Egin beharreko urratsak eta bete beharreko epeak.
+          </p>
+          <p class="garapen-oharra">
+            Datak iturri ofizialetan egiaztatu eta gehitzeko daude.
+          </p>
         </div>
-    </nav>
+      </section>
 
-    <div class="container-fluid">
-        <div class="row">
-            
-            <div class="col-12 col-sm-6 col-xl-3">
-                <div class="card">
-                    <div class="card-body">
-                        <!-- 3. Flexbox bidezko lerrokatzea -->
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5>Salmentak</h5>
-                            <span>EUR</span>
-                        </div>
-                        <!-- 3. Eduki habiatua (row eta col) -->
-                        <div class="row">
-                            <div class="col-12">
-                                <p>12.500 €</p>
-                            </div>
-                        </div>
-                        <!-- 4. Ikusgaitasunaren kontrola (d-none d-lg-block) -->
-                        <div class="d-none d-lg-block">
-                            <small>+10% azken hilabetean</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-xl-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5>Erabiltzaileak</h5>
-                            <span>N/A</span>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <p>1.200</p>
-                            </div>
-                        </div>
-                        <div class="d-none d-lg-block">
-                            <small>Aktiboak une honetan</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-xl-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5>Eskaerak</h5>
-                            <span>Kop</span>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <p>450</p>
-                            </div>
-                        </div>
-                        <div class="d-none d-lg-block">
-                            <small>-2% gaur</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-xl-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5>Irabaziak</h5>
-                            <span>EUR</span>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <p>3.200 €</p>
-                            </div>
-                        </div>
-                        <div class="d-none d-lg-block">
-                            <small>Garbia</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+      <section id="memoriak" class="col-12 col-md-6">
+        <div class="atal-txartela h-100">
+          <h3 class="h5">Aurreko GrALen memoriak</h3>
+          <p>
+            Aurreko lanak ikastetxearen, sailaren,
+            espezialitatearen edo ikasturtearen arabera bilatzeko atala.
+          </p>
+          <p class="garapen-oharra">
+            Katalogoa eta bilaketa gehitzeko daude.
+          </p>
         </div>
+      </section>
+
+      <section id="galdetegia" class="col-12 col-md-6">
+        <div class="atal-txartela h-100">
+          <h3 class="h5">Autoebaluazio-galdetegia</h3>
+          <p>
+            Egiaztatu GrALaren prozesua eta baldintzak ulertu dituzun.
+          </p>
+          <p class="garapen-oharra">
+            Galdetegia gehitzeko dago.
+          </p>
+        </div>
+      </section>
+
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <section id="about" class="atal-txartela mt-4">
+      <h2 class="h4">About us — Guri buruz</h2>
+
+      <p>
+        Egileak: [Idatzi hemen taldekideen izen-abizenak].
+      </p>
+
+      <p>
+        Webgune honen helburua EHUko ikasleei eta irakasleei
+        Gradu Amaierako Lanei buruzko informazioa eskaintzea da,
+        EHUko iturrietatik jasotakoa.
+      </p>
+
+      <p class="mb-0">
+        Eskola-ariketa gisa eraikitako prototipoa da,
+        eta ez du EHUko iturri ofizialak ordezkatzeko asmorik.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="container py-3 text-center text-secondary">
+    <small>GrAL Gida · PKE · 1.0 prototipoa</small>
+  </footer>
+
 </body>
 </html>
