@@ -1,0 +1,21 @@
+body {
+  background-color: #f5f6f8;
+  color: #212529;
+}
+
+.atal-txartela {
+  padding: 1.5rem;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+}
+
+.garapen-oharra {
+  margin-bottom: 0;
+  color: #595959;
+  font-size: 0.9rem;
+}
+
+section {
+  scroll-margin-top: 1rem;
+}
