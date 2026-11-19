@@ -1,11 +1,56 @@
 <!doctype html>
-<html lang="eu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GrAL Gida</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
-<header class="bg-dark text-white py-4"><div class="container"><h1>GrAL Gida</h1><p class="mb-0">Gradu Amaierako Lanari buruzko informazioa.</p></div></header>
-<nav class="bg-white border-bottom" aria-label="Nabigazio nagusia"><div class="container d-flex flex-wrap gap-2 py-3"><a class="btn btn-primary" href="index.html" aria-current="page">Hasiera</a><a class="btn btn-outline-primary" href="araudia.html">Araudia</a><a class="btn btn-outline-primary" href="egutegia.html">Egutegia</a><a class="btn btn-outline-primary" href="memoriak.html">Memoriak</a><a class="btn btn-outline-primary" href="galdetegia.html">Galdetegia</a><a class="btn btn-outline-secondary" href="#about">Guri buruz</a></div></nav>
-<main class="container py-4"><h2 class="h4 mb-3">Zer kontsultatu nahi duzu?</h2><div class="row g-3">
-<section class="col-12 col-md-6"><div class="atal-txartela h-100"><h3 class="h5">Araudia</h3><p>GrALa egiteko baldintzak eta araudia kontsultatzeko atala.</p><a class="btn btn-outline-primary" href="araudia.html">Araudia ikusi</a></div></section>
-<section class="col-12 col-md-6"><div class="atal-txartela h-100"><h3 class="h5">Deialdiak eta egutegia</h3><p>Egin beharreko urratsak eta bete beharreko epeak.</p><a class="btn btn-outline-primary" href="egutegia.html">Egutegia ikusi</a></div></section>
-<section class="col-12 col-md-6"><div class="atal-txartela h-100"><h3 class="h5">Aurreko GrALen memoriak</h3><p>Aurreko lanak kontsultatzeko orientazioa.</p><a class="btn btn-outline-primary" href="memoriak.html">Memoriak ikusi</a></div></section>
-<section class="col-12 col-md-6"><div class="atal-txartela h-100"><h3 class="h5">Autoebaluazio-galdetegia</h3><p>Egiaztatu gida honetako informazioa ulertu duzun.</p><a class="btn btn-outline-primary" href="galdetegia.html">Galdetegia egin</a></div></section></div>
-<section id="about" class="atal-txartela mt-4"><h2 class="h4">About us — Guri buruz</h2><p>Egileak: Informatika fakultateko ingeneritza softwareko ikasleak.</p><p>Webgune honen helburua EHUko ikasleei eta irakasleei Gradu Amaierako Lanei buruzko informazioa eskaintzea da, EHUko iturrietatik jasotakoa.</p><p class="mb-0">Eskola-ariketa gisa eraikitako prototipoa da, eta ez du EHUko iturri ofizialak ordezkatzeko asmorik. Araudiaren esteka zehatzak eta data ofizialak egiaztatu eta gehitzeko daude.</p></section></main>
-<footer class="container py-3 text-center text-secondary"><small>GrAL Gida · PKE · 1.0 prototipoa</small></footer></body></html>
+<html lang="eu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GrAL informazioa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="hasiera">
+<header class="azala">
+  <nav class="navbar navbar-expand-md navbar-dark" aria-label="Nabigazio nagusia">
+    <div class="container-fluid px-3 px-lg-4">
+      <a class="navbar-brand" href="index.html">GrAL informazioa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNagusia" aria-controls="menuNagusia" aria-expanded="false" aria-label="Menua ireki edo itxi"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menuNagusia">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Hasiera</a></li>
+          <li class="nav-item"><a class="nav-link" href="araudia.html">Araudia</a></li>
+          <li class="nav-item"><a class="nav-link" href="memoriak.html">Aurreko GrAL</a></li>
+          <li class="nav-item"><a class="nav-link" href="egutegia.html">Egutegiak</a></li>
+          <li class="nav-item"><a class="nav-link" href="galdetegia.html">Prest zaude?</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="azala-izenburua container text-center"><h1>Gradu Amaierako Lana</h1></div>
+</header>
+<main class="container hasiera-edukia">
+  <section class="sarrera" aria-label="Aurkezpena">
+    <p>GrAL buruzko orrialde honetan entrega egiteko orduan kontuan hartu behar duzun informazio guztia aurki dezakezu. Bertan, araudiaren puntu garrantzitsuenak, aurreko GrAL batzuk eta egutegiko data garrantzitsuak aurkitu ditzakezu, baita informazioa ondo ulertu duzula ziurtatzeko galdetegi labur bat ere.</p>
+  </section>
+  <hr>
+  <section aria-label="Atal nagusiak" class="atalak">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3"><a class="atal-esteka" href="araudia.html"><img src="argazki.jpeg" alt="" class="atal-irudia"><span>Araudia</span></a></div>
+      <div class="col-6 col-md-3"><a class="atal-esteka" href="memoriak.html"><img src="argazki.jpeg" alt="" class="atal-irudia"><span>Aurreko GrAL</span></a></div>
+      <div class="col-6 col-md-3"><a class="atal-esteka" href="egutegia.html"><img src="argazki.jpeg" alt="" class="atal-irudia"><span>Egutegiak</span></a></div>
+      <div class="col-6 col-md-3"><a class="atal-esteka" href="galdetegia.html"><img src="argazki.jpeg" alt="" class="atal-irudia"><span>Prest zaude?</span></a></div>
+    </div>
+  </section>
+  <section id="about" class="guri-buruz" aria-labelledby="aboutIzenburua">
+    <div class="row g-4 align-items-start">
+      <div class="col-12 col-md-9">
+        <h2 id="aboutIzenburua">About us</h2>
+        <p>Gure helburu nagusia Gradu Amaierako Lanei (GrAL) buruzko informazio argia, baliagarria eta ongi egituratua eskaintzea da, EHUko ikasleei eta irakasleei prozesu honetan laguntzeko.</p>
+        <p>Proiektu hau unibertsitate-mailako eskola-ariketa gisa eraiki da, eta bertan eskaintzen den informazioa Euskal Herriko Unibertsitateko (EHU) iturrietatik jasotzen da. Webgune honek ez ditu EHUko iturri edo kanal ofizialak ordezkatzen. Prozedura akademikoei buruzko erabakiak hartu aurretik, kontrastatu beti informazioa unibertsitatearen webgune ofizialean.</p>
+        <p>Egileak: <span class="egileen-oharra">taldekideen izen-abizenak gehitzeko daude</span> — EHUko Informatika Fakultateko Software Ingeniaritzako ikasleak.</p>
+      </div>
+      <div class="col-6 col-md-3 mx-auto text-center"><img src="argazki.jpeg" class="about-irudia img-fluid" alt="Behin-behineko irudia; EHUren logotipoa jartzeko lekua"></div>
+    </div>
+  </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
