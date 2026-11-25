@@ -1,0 +1,14 @@
+.kontraste-altua,
+.kontraste-altua * {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+  box-shadow: none !important;
+}
+.kontraste-altua a {
+  color: #ff0 !important;
+  text-decoration: underline !important;
+}
+.kontraste-altua img {
+  filter: grayscale(1) contrast(1.2);
+}
