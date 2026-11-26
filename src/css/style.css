@@ -12,7 +12,7 @@
 }
 
 .kontraste-altua img {
-  filter: grayscale(1) contrast(1.2);
+  filter: grayscale(1) contrast(1.2) !important;
 }
 
 /* Koloreak: lehenetsia (Okabe-Ito) eta kolore-ikusmenaren moduak */
@@ -42,6 +42,11 @@
   --kolore-defentsa-testua: var(--bs-white);
   --kolore-kalifikazioa: #CC79A7;
   --kolore-kalifikazioa-testua: var(--bs-dark);
+}
+
+/* Irudien zuzenketa (daltonizazioa): erabiltzaileak etengailua pizten duenean */
+.irudi-zuzenketa.kolore-deutan img {
+  filter: url(#daltonize-deuteranopia);
 }
 
 /* FullCalendar */
