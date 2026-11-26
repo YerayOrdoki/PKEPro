@@ -46,7 +46,7 @@
 
 /* Irudien zuzenketa (daltonizazioa): deuteranopia hautatzean zuzenean aplikatzen da */
 .kolore-deutan img {
-  filter: url(#daltonize-deuteranopia);
+  filter: url(#daltonize-deutan);
 }
 
 /* FullCalendar */
