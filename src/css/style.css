@@ -12,3 +12,13 @@
 .kontraste-altua img {
   filter: grayscale(1) contrast(1.2);
 }
+
+/* FullCalendar */
+.fc { font-size: 1rem; }
+.fc .fc-event-title { white-space: normal; }
+.fc-event.ev-E { background-color: #ffc107; border-color: #000; }
+.fc-event.ev-E, .fc-event.ev-E * { color: #000; }
+.fc-event.ev-D { background-color: #0d6efd; border-color: #000; }
+.fc-event.ev-K { background-color: #198754; border-color: #000; }
+.fc-event.ev-D, .fc-event.ev-D *, .fc-event.ev-K, .fc-event.ev-K * { color: #fff; }
+.kontraste-altua .fc-event { border: 2px solid #fff !important; }
