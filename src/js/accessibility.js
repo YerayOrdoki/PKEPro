@@ -1,7 +1,9 @@
 (function () {
   var MODUAK = ['lehenetsia', 'protan', 'deutan', 'tritan'];
   var FILTROAK = {
-    deutan: '0.79507 0.20492 0 0 0  0 1 0 0 0  -0.20492 0.20492 1 0 0  0 0 0 1 0'
+    protan: '1.0000 0.0000 0.0000 0.0000 0.0000  0.4789 0.4769 0.0442 0.0000 0.0000  0.5973 -0.6887 1.0914 0.0000 0.0000  0 0 0 1 0',
+    deutan: '1.0000 0.0000 0.0000 0.0000 0.0000  0.1628 0.7250 0.1122 0.0000 0.0000  0.4547 -0.6454 1.1907 0.0000 0.0000  0 0 0 1 0',
+    tritan: '0.7412 -0.4072 0.6660 0.0000 0.0000  0.0751 0.5852 0.3397 0.0000 0.0000  0.0000 0.0000 1.0000 0.0000 0.0000  0 0 0 1 0'
   };
   var o = { t: 100, k: false, c: 'lehenetsia' };
   var kBtn;
@@ -22,7 +24,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     var svg = '<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs>';
     Object.keys(FILTROAK).forEach(function (m) {
-      svg += '<filter id="daltonize-' + m + '" color-interpolation-filters="linearRGB"><feColorMatrix type="matrix" values="' + FILTROAK[m] + '"/></filter>';
+      svg += '<filter id="daltonize-' + m + '" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="' + FILTROAK[m] + '"/></filter>';
     });
     svg += '</defs></svg>';
     document.body.insertAdjacentHTML('afterbegin', svg);
