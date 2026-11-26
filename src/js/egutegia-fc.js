@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var HILABETEAK = ['urtarrila','otsaila','martxoa','apirila','maiatza','ekaina','uztaila','abuztua','iraila','urria','azaroa','abendua'];
-  var EGUN_LABURRAK = ['ig.','al.','ar.','az.','og.','ol.','lr.'];
+  var HILABETEAK = ['urtarrila', 'otsaila', 'martxoa', 'apirila', 'maiatza', 'ekaina', 'uztaila', 'abuztua', 'iraila', 'urria', 'azaroa', 'abendua'];
+  var EGUN_LABURRAK = ['ig.', 'al.', 'ar.', 'az.', 'og.', 'ol.', 'lr.'];
   var MOTA_IZENAK = { E: 'Epea', D: 'Defentsa', K: 'Kalifikazioa' };
   var panela = document.getElementById('fcXehetasuna');
 
