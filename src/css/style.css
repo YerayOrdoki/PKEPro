@@ -44,9 +44,17 @@
   --kolore-kalifikazioa-testua: var(--bs-dark);
 }
 
-/* Irudien zuzenketa (daltonizazioa): deuteranopia hautatzean zuzenean aplikatzen da */
+/* Irudien zuzenketa (daltonizazioa): kolore-ikusmen modua hautatzean zuzenean aplikatzen da */
+.kolore-protan img {
+  filter: url(#daltonize-protan);
+}
+
 .kolore-deutan img {
   filter: url(#daltonize-deutan);
+}
+
+.kolore-tritan img {
+  filter: url(#daltonize-tritan);
 }
 
 /* FullCalendar */
