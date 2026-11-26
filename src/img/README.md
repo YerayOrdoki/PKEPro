@@ -10,7 +10,7 @@ Orrialdeek WebP irudi lokalak erabiltzen dituzte. Hasierako orriko irudiak Pexel
 | egutegia.webp | Hasierako orriko egutegi-txartela | https://www.pexels.com/photo/a-calendar-and-laptop-on-a-desk-5240008/ |
 | galdetegia.webp | Hasierako orriko galdetegi-txartela | https://www.pexels.com/photo/student-using-laptop-8199133/ |
 | campus.webp | Hasierako orriko «Guri buruz» atala | https://www.pexels.com/photo/modern-university-campus-with-students-outdoors-31085764/ |
-| araudia-idazketa.webp | Araudia orriko azala | https://images.unsplash.com/photo-1455390582262-044cdead277a |
+| araudia-idazketa.webp | Araudia eta Prozesua orrietako azalak; Hasierako Prozesua txartela | https://images.unsplash.com/photo-1455390582262-044cdead277a |
 | egutegia-planifikazioa.webp | Egutegiak orriko azala | https://images.unsplash.com/photo-1506784983877-45594efa4cbe |
 | memoriak-elkarlana.webp | Aurreko GrAL orriko azala | https://images.unsplash.com/photo-1522202176988-66273c2fd55f |
 | galdetegia-ikasketa.webp | Galdetegia orriko azala | https://images.unsplash.com/photo-1516321318423-f06f85e504b3 |
