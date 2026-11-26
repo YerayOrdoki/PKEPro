@@ -1,23 +1,255 @@
 <!doctype html>
-<html lang="eu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Egutegiak · GrAL informazioa</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"><link href="src/css/style.css" rel="stylesheet"></head>
+<html lang="eu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Egutegiak · GrAL informazioa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="src/css/style.css" rel="stylesheet">
+</head>
+
 <body class="bg-light text-dark d-flex flex-column min-vh-100">
-<a class="visually-hidden-focusable d-inline-block bg-white text-dark p-3" href="#edukiNagusia">Eduki nagusira joan</a>
-<header><nav class="navbar navbar-expand-lg bg-dark py-3" data-bs-theme="dark" aria-label="Nabigazio nagusia"><div class="container"><a class="navbar-brand fw-semibold fs-5 me-2" href="index.html">GrAL informazioa</a><button class="navbar-toggler border-light text-white px-3 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#menuNagusia" aria-controls="menuNagusia" aria-expanded="false" aria-label="Nabigazio-menua ireki edo itxi"><span class="navbar-toggler-icon" aria-hidden="true"></span><span class="small ms-2">Menua</span></button><div class="collapse navbar-collapse" id="menuNagusia"><ul class="navbar-nav ms-auto gap-2 pt-3 pt-lg-0"><li class="nav-item"><a class="nav-link text-white px-3 py-2" href="index.html">Hasiera</a></li><li class="nav-item"><a class="nav-link text-white px-3 py-2" href="araudia.html">Araudia</a></li><li class="nav-item"><a class="nav-link text-white px-3 py-2" href="memoriak.html">Aurreko GrAL</a></li><li class="nav-item"><a class="nav-link active text-white fw-semibold text-decoration-underline link-offset-3 px-3 py-2" aria-current="page" href="egutegia.html">Egutegiak</a></li><li class="nav-item"><a class="nav-link text-white px-3 py-2" href="prozesua.html">Prozesua</a></li><li class="nav-item"><a class="nav-link text-white px-3 py-2" href="galdetegia.html">Prest zaude?</a></li><li class="nav-item"><a class="nav-link text-white px-3 py-2" href="index.html#about">Guri buruz</a></li></ul></div></div></nav></header>
-<main id="edukiNagusia" tabindex="-1" class="flex-grow-1">
-<div class="bg-white border-bottom"><div class="container py-4 py-lg-5"><div class="row g-4 g-lg-5 align-items-center">
-<div class="col-12 col-lg-7"><nav aria-label="Kokapena"><ol class="breadcrumb"><li class="breadcrumb-item"><a class="link-dark link-offset-3" href="index.html">Hasiera</a></li><li class="breadcrumb-item active text-dark" aria-current="page">Egutegiak</li></ol></nav><p class="text-primary-emphasis fw-semibold">Plangintza eta deialdiak · 2026-27 ikasturtea</p><h1 class="display-5 fw-bold">Defentsarako prozedura eta egutegia</h1><p class="lead mb-0">Ikasleen, zuzendariaren eta epaimahaiaren egutegiak, deialdi bakoitzeko.</p></div>
-<div class="col-12 col-lg-5"><div class="ratio ratio-4x3"><img src="src/img/egutegia-planifikazioa.webp" alt="Egutegi irekia eta kafe-kikara bat mahai gainean" class="w-100 h-100 object-fit-cover rounded-4"></div></div>
-</div></div></div>
-<div class="container py-4 py-lg-5">
-<aside class="bg-white border border-dark rounded-3 p-4 mb-5" aria-labelledby="dataOharra"><h2 id="dataOharra" class="h5 fw-bold">Ohar garrantzitsua</h2><p class="lh-lg">Hemen agertzen diren datak 2026-27 ikasturtekoak dira, eta AAG eta IIG graduen defentsa eta kalifikazioen egutegiari dagozkio (datak bi graduetan berdinak dira). Gida hau eskola-ariketa da; kontsultatu beti Fakultatearen deialdi ofiziala epeak egiaztatzeko.</p><a class="btn btn-dark py-3 px-4" href="https://www.ehu.eus/eu/web/informatika-fakultatea/ikas/ikasketak/gradu-amaierako-proiektua">EHUko GrAL informaziora joan</a></aside>
-<section class="mb-5" aria-labelledby="egutegiaBista"><h2 id="egutegiaBista" class="h3 fw-bold mb-3">Hilabeteko egutegia</h2><p class="lh-lg">Letrak mota adierazten du: <strong>E</strong> epea, <strong>D</strong> defentsa, <strong>K</strong> kalifikazioa. Zenbakiak deialdia adierazten du (1etik 4ra). Sakatu gertaera bat xehetasunak ikusteko.</p><div id="fcEgutegia"></div><div id="fcXehetasuna" class="alert alert-secondary mt-3 mb-0" role="status" aria-live="polite">Aukeratu gertaera bat egutegian xehetasunak hemen ikusteko.</div></section>
-<section aria-labelledby="egutegiAukerak"><h2 id="egutegiAukerak" class="h3 fw-bold mb-3">Aukeratu zure rola</h2><p class="lh-lg mb-4">Ireki atal bakoitza bere taulak ikusteko. Lau deialdi daude, eta ikasleek ikasturte bakoitzeko bi deialditan soilik aurkez daitezke.</p>
-<div class="accordion" id="egutegiPanelak">
-<div class="accordion-item border-secondary"><h3 class="accordion-header" id="izenburuaIkasleak"><button class="accordion-button py-4 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#atalaIkasleak" aria-expanded="true" aria-controls="atalaIkasleak">Ikaslea</button></h3><div id="atalaIkasleak" class="accordion-collapse collapse show" aria-labelledby="izenburuaIkasleak"><div class="accordion-body p-3 p-md-4 lh-lg"><div class="table-responsive"><table class="table table-bordered align-middle mb-3"><caption class="text-dark">Ikasleen urratsak eta epeak, 2026-27 ikasturtea</caption><thead class="table-light"><tr><th scope="col">Urratsa</th><th scope="col">1. deialdia</th><th scope="col">2. deialdia</th><th scope="col">3. deialdia</th><th scope="col">4. deialdia</th></tr></thead><tbody><tr><th scope="row">1. GrALa GAUR-en matrikulatu (matrikula atalean) eta defentsa eskaera egin (GrAL atalean)</th><td>2026ko urriaren 19a arte</td><td>2027ko otsailaren 1a arte</td><td>2027ko ekainaren 7a arte</td><td>2027ko irailaren 1a arte</td></tr><tr><th scope="row">2. Lana ADDI plataforma digitalera igo eta posterra <a class="link-dark link-offset-3" href="mailto:dif.gral@ehu.eus">dif.gral@ehu.eus</a> helbidera bidali</th><td>2026ko urriaren 23a arte</td><td>2027ko otsailaren 5a arte</td><td>2027ko ekainaren 11a arte</td><td>2027ko irailaren 6a arte</td></tr><tr><th scope="row">3. Lanen defentsak</th><td>2026ko azaroaren 9tik 13ra</td><td>2027ko otsailaren 22tik 26ra</td><td>2027ko ekainaren 28tik uztailaren 14ra</td><td>2027ko irailaren 20tik 29ra</td></tr></tbody></table></div><p class="fst-italic mb-0"><strong>Oharra:</strong> ikasleek ikasturte bakoitzeko bi deialdi soilik erabili ahal izango dituzte.</p></div></div></div>
-<div class="accordion-item border-secondary"><h3 class="accordion-header" id="izenburuaZuzendaria"><button class="accordion-button collapsed py-4 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#atalaZuzendaria" aria-expanded="false" aria-controls="atalaZuzendaria">Zuzendaria</button></h3><div id="atalaZuzendaria" class="accordion-collapse collapse" aria-labelledby="izenburuaZuzendaria"><div class="accordion-body p-3 p-md-4 lh-lg"><div class="table-responsive"><table class="table table-bordered align-middle mb-3"><caption class="text-dark">Zuzendariaren urratsa eta epeak, 2026-27 ikasturtea</caption><thead class="table-light"><tr><th scope="col">Urratsa</th><th scope="col">1. deialdia</th><th scope="col">2. deialdia</th><th scope="col">3. deialdia</th><th scope="col">4. deialdia</th></tr></thead><tbody><tr><th scope="row">1. Defentsa-oniritzia dokumentua bete, epaimahaiko xehetasunekin, eta GAUR-era igo</th><td>2026ko urriaren 20a arte</td><td>2027ko otsailaren 2a arte</td><td>2027ko ekainaren 8a arte</td><td>2027ko irailaren 2a arte</td></tr></tbody></table></div></div></div></div>
-<div class="accordion-item border-secondary"><h3 class="accordion-header" id="izenburuaEpaimahaia"><button class="accordion-button collapsed py-4 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#atalaEpaimahaia" aria-expanded="false" aria-controls="atalaEpaimahaia">Epaimahaia</button></h3><div id="atalaEpaimahaia" class="accordion-collapse collapse" aria-labelledby="izenburuaEpaimahaia"><div class="accordion-body p-3 p-md-4 lh-lg"><div class="table-responsive"><table class="table table-bordered align-middle mb-3"><caption class="text-dark">Epaimahaiaren urratsak eta epeak, 2026-27 ikasturtea</caption><thead class="table-light"><tr><th scope="col">Urratsa</th><th scope="col">1. deialdia</th><th scope="col">2. deialdia</th><th scope="col">3. deialdia</th><th scope="col">4. deialdia</th></tr></thead><tbody><tr><th scope="row">1. Epaimahaiko idazkariak kalifikazioak jakitera eman eta akta <strong>dif.gral@ehu.eus</strong> helbidera bidaliko du</th><td>2026ko azaroak 17</td><td>2027ko martxoak 2</td><td>2027ko uztailak 15</td><td>2027ko irailak 30</td></tr><tr><th scope="row">2. Behin betiko kalifikazioak jakitera eman</th><td>2026ko azaroak 20</td><td>2027ko martxoak 5</td><td>2027ko uztailak 23</td><td>2027ko urriak 4</td></tr></tbody></table></div><p class="fst-italic mb-0"><strong>Oharra:</strong> kalifikazioen aurkako erreklamazioak: hiru laneguneko epea.</p></div></div></div>
-</div></section>
-<section class="bg-white border rounded-3 p-4 p-md-5 mt-5" aria-labelledby="urratsak"><p class="text-primary-emphasis fw-semibold">Zer egin behar da?</p><h2 id="urratsak" class="h3 fw-bold mb-3">GrALaren prozesua urratsez urrats</h2><p class="lh-lg">Gaia aukeratzetik kalifikazioa jaso arte: zer egin, nork eta noiz, araudian eta egutegi honetan oinarrituta.</p><a class="btn btn-dark py-3 px-4" href="prozesua.html">Prozesua ikusi</a></section>
-<p class="lh-lg mt-4 mb-0">Webgune hau eskola-ariketa da eta ez ditu EHUko iturri ofizialak ordezkatzen.</p>
-</div></main><footer class="bg-dark text-white py-4"><div class="container d-flex flex-column flex-md-row justify-content-between align-items-start gap-3"><p class="mb-0">GrAL informazioa · PKE · Eskola-ariketa</p><a class="link-light link-offset-3 py-1" href="index.html#about">About us — Guri buruz</a></div></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script><script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fullcalendar/bootstrap5@6.1.15/index.global.min.js"></script><script src="src/js/egutegia-datak.js"></script><script src="src/js/egutegia-fc.js"></script><script src="src/js/accessibility.js"></script>
-</body></html>
+    <a class="visually-hidden-focusable d-inline-block bg-white text-dark p-3" href="#edukiNagusia">Eduki nagusira
+        joan</a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark py-3" data-bs-theme="dark" aria-label="Nabigazio nagusia">
+            <div class="container"><a class="navbar-brand fw-semibold fs-5 me-2" href="index.html">GrAL
+                    informazioa</a><button class="navbar-toggler border-light text-white px-3 py-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menuNagusia" aria-controls="menuNagusia"
+                    aria-expanded="false" aria-label="Nabigazio-menua ireki edo itxi"><span class="navbar-toggler-icon"
+                        aria-hidden="true"></span><span class="small ms-2">Menua</span></button>
+                <div class="collapse navbar-collapse" id="menuNagusia">
+                    <ul class="navbar-nav ms-auto gap-2 pt-3 pt-lg-0">
+                        <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="index.html">Hasiera</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="araudia.html">Araudia</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="memoriak.html">Aurreko
+                                GrAL</a></li>
+                        <li class="nav-item"><a
+                                class="nav-link active text-white fw-semibold text-decoration-underline link-offset-3 px-3 py-2"
+                                aria-current="page" href="egutegia.html">Egutegiak</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="prozesua.html">Prozesua</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="galdetegia.html">Prest
+                                zaude?</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="index.html#about">Guri
+                                buruz</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="edukiNagusia" tabindex="-1" class="flex-grow-1">
+        <div class="bg-white border-bottom">
+            <div class="container py-4 py-lg-5">
+                <div class="row g-4 g-lg-5 align-items-center">
+                    <div class="col-12 col-lg-7">
+                        <nav aria-label="Kokapena">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a class="link-dark link-offset-3"
+                                        href="index.html">Hasiera</a></li>
+                                <li class="breadcrumb-item active text-dark" aria-current="page">Egutegiak</li>
+                            </ol>
+                        </nav>
+                        <p class="text-primary-emphasis fw-semibold">Plangintza eta deialdiak · 2026-27 ikasturtea</p>
+                        <h1 class="display-5 fw-bold">Defentsarako prozedura eta egutegia</h1>
+                        <p class="lead mb-0">Ikasleen, zuzendariaren eta epaimahaiaren egutegiak, deialdi bakoitzeko.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="ratio ratio-4x3"><img src="src/img/egutegia-planifikazioa.webp"
+                                alt="Egutegi irekia eta kafe-kikara bat mahai gainean"
+                                class="w-100 h-100 object-fit-cover rounded-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4 py-lg-5">
+            <aside class="bg-white border border-dark rounded-3 p-4 mb-5" aria-labelledby="dataOharra">
+                <h2 id="dataOharra" class="h5 fw-bold">Ohar garrantzitsua</h2>
+                <p class="lh-lg">Hemen agertzen diren datak 2026-27 ikasturtekoak dira, eta AAG eta IIG graduen defentsa
+                    eta kalifikazioen egutegiari dagozkio (datak bi graduetan berdinak dira). Gida hau eskola-ariketa
+                    da; kontsultatu beti Fakultatearen deialdi ofiziala epeak egiaztatzeko.</p><a
+                    class="btn btn-dark py-3 px-4"
+                    href="https://www.ehu.eus/eu/web/informatika-fakultatea/ikas/ikasketak/gradu-amaierako-proiektua">EHUko
+                    GrAL informaziora joan</a>
+            </aside>
+            <section class="mb-5" aria-labelledby="egutegiaBista">
+                <h2 id="egutegiaBista" class="h3 fw-bold mb-3">Hilabeteko egutegia</h2>
+                <p class="lh-lg">Letrak mota adierazten du: <strong>E</strong> epea, <strong>D</strong> defentsa,
+                    <strong>K</strong> kalifikazioa. Zenbakiak deialdia adierazten du (1etik 4ra). Sakatu gertaera bat
+                    xehetasunak ikusteko.</p>
+                <div id="fcEgutegia"></div>
+                <div id="fcXehetasuna" class="alert alert-secondary mt-3 mb-0" role="status" aria-live="polite">Aukeratu
+                    gertaera bat egutegian xehetasunak hemen ikusteko.</div>
+            </section>
+            <section aria-labelledby="egutegiAukerak">
+                <h2 id="egutegiAukerak" class="h3 fw-bold mb-3">Aukeratu zure rola</h2>
+                <p class="lh-lg mb-4">Ireki atal bakoitza bere taulak ikusteko. Lau deialdi daude, eta ikasleek
+                    ikasturte bakoitzeko bi deialditan soilik aurkez daitezke.</p>
+                <div class="accordion" id="egutegiPanelak">
+                    <div class="accordion-item border-secondary">
+                        <h3 class="accordion-header" id="izenburuaIkasleak"><button
+                                class="accordion-button py-4 fw-semibold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#atalaIkasleak" aria-expanded="true"
+                                aria-controls="atalaIkasleak">Ikaslea</button></h3>
+                        <div id="atalaIkasleak" class="accordion-collapse collapse show"
+                            aria-labelledby="izenburuaIkasleak">
+                            <div class="accordion-body p-3 p-md-4 lh-lg">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered align-middle mb-3">
+                                        <caption class="text-dark">Ikasleen urratsak eta epeak, 2026-27 ikasturtea
+                                        </caption>
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th scope="col">Urratsa</th>
+                                                <th scope="col">1. deialdia</th>
+                                                <th scope="col">2. deialdia</th>
+                                                <th scope="col">3. deialdia</th>
+                                                <th scope="col">4. deialdia</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1. GrALa GAUR-en matrikulatu (matrikula atalean) eta
+                                                    defentsa eskaera egin (GrAL atalean)</th>
+                                                <td>2026ko urriaren 19a arte</td>
+                                                <td>2027ko otsailaren 1a arte</td>
+                                                <td>2027ko ekainaren 7a arte</td>
+                                                <td>2027ko irailaren 1a arte</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2. Lana ADDI plataforma digitalera igo eta posterra <a
+                                                        class="link-dark link-offset-3"
+                                                        href="mailto:dif.gral@ehu.eus">dif.gral@ehu.eus</a> helbidera
+                                                    bidali</th>
+                                                <td>2026ko urriaren 23a arte</td>
+                                                <td>2027ko otsailaren 5a arte</td>
+                                                <td>2027ko ekainaren 11a arte</td>
+                                                <td>2027ko irailaren 6a arte</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3. Lanen defentsak</th>
+                                                <td>2026ko azaroaren 9tik 13ra</td>
+                                                <td>2027ko otsailaren 22tik 26ra</td>
+                                                <td>2027ko ekainaren 28tik uztailaren 14ra</td>
+                                                <td>2027ko irailaren 20tik 29ra</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="fst-italic mb-0"><strong>Oharra:</strong> ikasleek ikasturte bakoitzeko bi
+                                    deialdi soilik erabili ahal izango dituzte.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-secondary">
+                        <h3 class="accordion-header" id="izenburuaZuzendaria"><button
+                                class="accordion-button collapsed py-4 fw-semibold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#atalaZuzendaria" aria-expanded="false"
+                                aria-controls="atalaZuzendaria">Zuzendaria</button></h3>
+                        <div id="atalaZuzendaria" class="accordion-collapse collapse"
+                            aria-labelledby="izenburuaZuzendaria">
+                            <div class="accordion-body p-3 p-md-4 lh-lg">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered align-middle mb-3">
+                                        <caption class="text-dark">Zuzendariaren urratsa eta epeak, 2026-27 ikasturtea
+                                        </caption>
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th scope="col">Urratsa</th>
+                                                <th scope="col">1. deialdia</th>
+                                                <th scope="col">2. deialdia</th>
+                                                <th scope="col">3. deialdia</th>
+                                                <th scope="col">4. deialdia</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1. Defentsa-oniritzia dokumentua bete, epaimahaiko
+                                                    xehetasunekin, eta GAUR-era igo</th>
+                                                <td>2026ko urriaren 20a arte</td>
+                                                <td>2027ko otsailaren 2a arte</td>
+                                                <td>2027ko ekainaren 8a arte</td>
+                                                <td>2027ko irailaren 2a arte</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-secondary">
+                        <h3 class="accordion-header" id="izenburuaEpaimahaia"><button
+                                class="accordion-button collapsed py-4 fw-semibold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#atalaEpaimahaia" aria-expanded="false"
+                                aria-controls="atalaEpaimahaia">Epaimahaia</button></h3>
+                        <div id="atalaEpaimahaia" class="accordion-collapse collapse"
+                            aria-labelledby="izenburuaEpaimahaia">
+                            <div class="accordion-body p-3 p-md-4 lh-lg">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered align-middle mb-3">
+                                        <caption class="text-dark">Epaimahaiaren urratsak eta epeak, 2026-27 ikasturtea
+                                        </caption>
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th scope="col">Urratsa</th>
+                                                <th scope="col">1. deialdia</th>
+                                                <th scope="col">2. deialdia</th>
+                                                <th scope="col">3. deialdia</th>
+                                                <th scope="col">4. deialdia</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1. Epaimahaiko idazkariak kalifikazioak jakitera eman
+                                                    eta akta <strong>dif.gral@ehu.eus</strong> helbidera bidaliko du
+                                                </th>
+                                                <td>2026ko azaroak 17</td>
+                                                <td>2027ko martxoak 2</td>
+                                                <td>2027ko uztailak 15</td>
+                                                <td>2027ko irailak 30</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2. Behin betiko kalifikazioak jakitera eman</th>
+                                                <td>2026ko azaroak 20</td>
+                                                <td>2027ko martxoak 5</td>
+                                                <td>2027ko uztailak 23</td>
+                                                <td>2027ko urriak 4</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="fst-italic mb-0"><strong>Oharra:</strong> kalifikazioen aurkako
+                                    erreklamazioak: hiru laneguneko epea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-white border rounded-3 p-4 p-md-5 mt-5" aria-labelledby="urratsak">
+                <p class="text-primary-emphasis fw-semibold">Zer egin behar da?</p>
+                <h2 id="urratsak" class="h3 fw-bold mb-3">GrALaren prozesua urratsez urrats</h2>
+                <p class="lh-lg">Gaia aukeratzetik kalifikazioa jaso arte: zer egin, nork eta noiz, araudian eta egutegi
+                    honetan oinarrituta.</p><a class="btn btn-dark py-3 px-4" href="prozesua.html">Prozesua ikusi</a>
+            </section>
+            <p class="lh-lg mt-4 mb-0">Webgune hau eskola-ariketa da eta ez ditu EHUko iturri ofizialak ordezkatzen.</p>
+        </div>
+    </main>
+    <footer class="bg-dark text-white py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start gap-3">
+            <p class="mb-0">GrAL informazioa · PKE · Eskola-ariketa</p><a class="link-light link-offset-3 py-1"
+                href="index.html#about">About us — Guri buruz</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/bootstrap5@6.1.15/index.global.min.js"></script>
+    <script src="src/js/egutegia-datak.js"></script>
+    <script src="src/js/egutegia-fc.js"></script>
+    <script src="src/js/accessibility.js"></script>
+</body>
+
+</html>
