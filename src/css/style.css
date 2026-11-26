@@ -15,6 +15,35 @@
   filter: grayscale(1) contrast(1.2);
 }
 
+/* Koloreak: lehenetsia (Okabe-Ito) eta kolore-ikusmenaren moduak */
+:root {
+  --kolore-epea: #E69F00;
+  --kolore-epea-testua: var(--bs-dark);
+  --kolore-defentsa: #0072B2;
+  --kolore-defentsa-testua: var(--bs-white);
+  --kolore-kalifikazioa: #B84A00;
+  --kolore-kalifikazioa-testua: var(--bs-white);
+}
+
+.kolore-protan,
+.kolore-deutan {
+  --kolore-epea: #E69F00;
+  --kolore-epea-testua: var(--bs-dark);
+  --kolore-defentsa: #0072B2;
+  --kolore-defentsa-testua: var(--bs-white);
+  --kolore-kalifikazioa: #F0E442;
+  --kolore-kalifikazioa-testua: var(--bs-dark);
+}
+
+.kolore-tritan {
+  --kolore-epea: #B84A00;
+  --kolore-epea-testua: var(--bs-white);
+  --kolore-defentsa: #006B53;
+  --kolore-defentsa-testua: var(--bs-white);
+  --kolore-kalifikazioa: #CC79A7;
+  --kolore-kalifikazioa-testua: var(--bs-dark);
+}
+
 /* FullCalendar */
 .fc {
   font-size: 1rem;
@@ -35,34 +64,56 @@
 }
 
 .fc-event.ev-E {
-  background-color: var(--bs-warning);
+  background-color: var(--kolore-epea);
   border-color: var(--bs-dark);
 }
 
 .fc-event.ev-E,
 .fc-event.ev-E * {
-  color: var(--bs-dark);
+  color: var(--kolore-epea-testua);
 }
 
 .fc-event.ev-D {
-  background-color: var(--bs-primary);
-  border-color: var(--bs-dark);
-}
-
-.fc-event.ev-K {
-  background-color: var(--bs-success);
+  background-color: var(--kolore-defentsa);
   border-color: var(--bs-dark);
 }
 
 .fc-event.ev-D,
-.fc-event.ev-D *,
+.fc-event.ev-D * {
+  color: var(--kolore-defentsa-testua);
+}
+
+.fc-event.ev-K {
+  background-color: var(--kolore-kalifikazioa);
+  border-color: var(--bs-dark);
+}
+
 .fc-event.ev-K,
 .fc-event.ev-K * {
-  color: var(--bs-white);
+  color: var(--kolore-kalifikazioa-testua);
+}
+
+/* Ereduak: kolorea ez dadin bereizteko bide bakarra izan */
+.kolore-laguntza .fc-event.ev-E {
+  background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.22) 0 4px, transparent 4px 9px);
+  border-style: dashed;
+}
+
+.kolore-laguntza .fc-event.ev-D {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.45) 1.5px, transparent 2px);
+  background-size: 8px 8px;
+}
+
+.kolore-laguntza .fc-event.ev-K {
+  background-image:
+    repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.25) 0 2px, transparent 2px 8px),
+    repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.25) 0 2px, transparent 2px 8px);
+  border-bottom-width: 4px;
 }
 
 .kontraste-altua .fc-event {
   border: 2px solid #fff !important;
+  background-image: none !important;
 }
 
 .fc .fc-toolbar {
