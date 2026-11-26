@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   new FullCalendar.Calendar(document.getElementById('fcEgutegia'), {
+    themeSystem: 'bootstrap5',
     locale: 'eu',
     initialView: 'dayGridMonth',
     initialDate: '2026-11-26',
